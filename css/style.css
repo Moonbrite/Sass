@@ -7,6 +7,8 @@ h1 { font-size: 50px; font-weight: 200; letter-spacing: 2px; }
 
 h2 { text-transform: uppercase; cursor: default; }
 
+button:hover { background-image: linear-gradient(80deg, #dbaa14, #f05526); }
+
 /* =============================================================================
     Header
 */
@@ -28,7 +30,7 @@ nav li .transparent li:hover { background-color: #f90b0b; color: wheat; }
 
 nav .more:hover .transparent { background-color: white; opacity: 1; visibility: visible; transition: all 2s ease-in-out; }
 
-nav li:hover { background-color: #464444; }
+nav li:hover { background-color: #464444b8; }
 
 nav a { color: #fff; font-weight: 300; font-size: 14px; text-transform: uppercase; }
 
@@ -158,12 +160,14 @@ Media Query Mobile
   .contact .contact-global .contact-form form input:nth-of-type(1), .contact .contact-global .contact-form form input:nth-of-type(2) { min-width: 150px; } }
 
 @media (max-width: 800px) { nav ul li { padding: 15px 10px; }
+  nav ul li .transparent { right: 40px; }
   .fleche-d, .fleche-g { display: none; } }
 
 @media (max-width: 499px) { * { overflow-x: clip; }
   nav { margin-right: 40px; }
-  nav ul { margin-left: 25px; margin-right: 10px; }
   nav li { padding: 15px 8px; }
+  nav li .transparent { margin: 0; }
+  nav li .transparent ul li { padding: 10px 5px; font-size: 10px; }
   nav a { font-size: 11px; }
   nav h2 { font-size: 16px; margin-left: 10px; }
   .contact .contact-global .contact-texte { padding-left: 15px; justify-content: left; }
