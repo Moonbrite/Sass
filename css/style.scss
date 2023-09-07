@@ -29,6 +29,7 @@ h2 {
 button:hover{
   background-image: linear-gradient(80deg, #dbaa14 , rgb(240, 85, 38));
 }
+
 /* =============================================================================
     Header
 */
@@ -488,6 +489,8 @@ Media Query Mobile
   }
   nav {
     margin-right: 40px;
+    ul{
+      }
     li {
       padding: 15px 8px;
       .transparent {
